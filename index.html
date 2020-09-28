@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Sergio Villarroel</title>
+	<meta name="viewport" content="widt=device=width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="Diseño Software, trabajos de software, programación">
+	<meta name="description" content="Diseño Software, programación web e innovación">
+	<meta name="owner" content="Sergio Villarroel">
+	<meta name="author" content="Sergio Villarroel">
+	<meta name="robots" content="index, follow">
+	
+	<script src="js/modernizr-custom.js"></script>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/design.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+		
+</head>
+<body>
+	<header>
+
+		<h1>
+			
+			<a href="index.html">
+			<figure><img src="img/logo.svg" alt="">S</figure>
+			</a>
+			<a href="index.html">Sergio Villarroel</a>
+		
+		</h1>
+		
+		
+		<nav id="menuNavegacion">
+			
+			<figure id="showMenu" class="ioMenuMovil" onclick="displayMenu()"><img src="icons/menu.png"></figure>
+
+			<div id="card_menu">
+				<figure id="hideMenu"class="ioMenuMovil" onclick="displayMenu()"><img src="icons/cancel-circle.svg"></figure>
+				<figure id="logo_menu"><img src="img/logo.svg"></figure>
+			
+			<ul>
+				<li><a onclick="navSection('aboutme')" href="#">About me</a></li>
+				<li><a onclick="navSection('skills')" href="#">Skills</a></li>
+				<li><a onclick="navSection('proyect')" href="#">Proyect</a></li>
+				<li><a onclick="displayFormuContact('block')" href="#">Contact</a></li>
+			</ul>
+			</div>
+		
+		</nav>
+
+	</header><!-- /header -->
+
+		<div id="contact_form">
+
+		<form action="contact.php" id="form1" name="form1" method="post">
+
+		<div id="close_form" onclick="displayFormuContact('none')"></div>
+		<p>Dí Hola</p>	
+
+		<input type="text" name="name" id="name" placeholder="Tu nombre" onfocus="if(this.placeholder='')this.placeholder="'Tu nombre'/>
+		<input type="text" name="email" id="email" placeholder="Tu email" onfocus="if(this.placeholder='')this.placeholder="'Tu email'/>
+
+		<textarea name="message" id="message"  placeholder="Mensaje" onfocus="if(this.placeholder='')this.placeholder="'Mensaje'></textarea>
+
+		<input type="submit" name="Submit" id="button" value="ENVIAR"/>
+		</form>
+
+		</div>
+		<div id="contact_button" onclick="displayFormuContact('block')"></div>
+
+
+	<div id="slider">
+		<section class="slide" id="home" style="display:block">
+			
+			<div class="mainanimation">
+			<!-- sample from https://particles.matteobruni.it/#mask -->
+			<!-- tsParticles container -->
+			<div id="tsparticles"></div>
+			
+			</div>
+
+		   	<div class="mainlogo">
+		   		<h2>Soy un <strong>Estudiante de Ingenieria del Software</strong></strong></h2>
+		   	</div>
+
+		   	<div class="buttonspage">
+		   		<div id="contratame" onclick="displayFormuContact('block')">CONTRÁTAME</div>
+		   		<a href="docs/CURRICULUM.pdf" target="_blank">DESCARGAR CV</a>
+		   	</div>
+
+
+		</section>
+		<section class="slide" id="aboutme" style="display:none" >
+
+		<div class="top_am">
+			<div class="text_am">
+				<h2>SOBRE MI</h2>
+				<p>Soy un estudiante de Ingenieria del Software, gran visualizador y solucionador de problemas complejos. Expandiendo siempre hacia nuevos conocimientos, técnicas y habilidades.</p>
+				<p>El papel del Software hoy en dia tiene una misión muy importante en nuestra sociedad. Los ingenieros tienen gran impacto ya que solucionan problemas que hacen avanzar hacia un nuevo y prometedor horizonte. Toda mi pasión emerge a traves del diseño y implementación e software.</p>
+				<p>Realizo múltiples proyectos en diferentes lenguajes y hábitos. Echa un vistazo aquí debajo para ver los servicios que ofrezco. Si tienes en mente un proyecto que quieres llevar a cabo y necesitas mi ayuda, solo <span onclick="displayFormuContact('block')"> dí hola</span>.</p>
+			</div>
+		</div>
+
+			<div class="bottom_am">
+				<article>
+					<div class="card_service">
+						<h3><strong>Diseño de</strong>Interfaces</h3>
+						<p>Breve explicación del servicio en esta tarjeta</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="card_service">
+						<h3><strong>Diseño de</strong>Bases de Datos</h3>
+						<p>Breve explicación del servicio en esta tarjeta</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="card_service">
+						<h3><strong>Desarrollo de</strong>Programas</h3>
+						<p>Breve explicación del servicio en esta tarjeta</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="card_service">
+						<h3><strong>Desarrollo de</strong>Paginas Web</h3>
+						<p>Breve explicación del servicio en esta tarjeta</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="slide" id="skills" style="display:none" >
+				<div id="main_skills">
+					<article id="tecnicas">
+
+						<h2>Skills Técnicas</h2>
+						<div class="box_skills">
+							<div class="skill">
+							<h3>Java</h3>
+							<div class="level" style="width: 86%"></div>
+							<div class="rest" style="width: 9%"></div>
+							<div class="hexagono" style="left: 87%">
+								<p></p>
+								</div>
+							</div>
+
+								<div class="skill">
+							<h3>C/C++</h3>
+							<div class="level" style="width: 70%"></div>
+							<div class="rest" style="width: 25%"></div>
+							<div class="hexagono" style="left: 70%">
+								<p></p>
+								</div>
+							</div>
+
+								<div class="skill">
+							<h3>SQL</h3>
+							<div class="level" style="width: 65%"></div>
+							<div class="rest" style="width: 30%"></div>
+							<div class="hexagono" style="left: 65%">
+								<p></p>
+								</div>
+							</div>
+
+								<div class="skill">
+							<h3>Android</h3>
+							<div class="level" style="width: 68%"></div>
+							<div class="rest" style="width: 27%"></div>
+							<div class="hexagono" style="left: 68%">
+								<p></p>
+								</div>
+							</div>
+
+									<div class="skill">
+							<h3>Html/Css</h3>
+							<div class="level" style="width: 81%"></div>
+							<div class="rest" style="width: 14%"></div>
+							<div class="hexagono" style="left: 81%">
+								<p></p>
+								</div>
+							</div>
+						</div>	
+					</article>
+
+					<article id="personales">
+						<h2>Skills Personales</h2>
+						<div class="box_skills">
+							<div class="skill">
+								<h3>Creatividad</h3>
+									<div class="level" style="width: 80%"></div>
+									<div class="rest" style="width: 17%"></div>
+									<div class="hexagono" style="left: 81%">
+									<p></p>
+								</div>
+							</div>
+
+							<div class="skill">
+								<h3>Dedicación</h3>
+								<div class="level" style="width: 78%"></div>
+								<div class="rest" style="width: 19%"></div>
+								<div class="hexagono" style="left: 80%">
+									<p></p>
+								</div>
+							</div>
+
+							<div class="skill">
+								<h3>Trabajo en equipo</h3>
+								<div class="level" style="width: 91%"></div>
+								<div class="rest" style="width: 6%"></div>
+								<div class="hexagono" style="left: 92%">
+									<p></p>
+								</div>
+							</div>
+
+							<div class="skill">
+								<h3>Comunicación</h3>
+								<div class="level" style="width: 75%"></div>
+								<div class="rest" style="width: 22%"></div>
+								<div class="hexagono" style="left: 74%">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			<div id="other_skills">
+				<article>
+					<h2>Conocimiento</h2>
+
+					<ul>
+						<li>Windows</li>
+						<li>Macintosh</li>
+						<li>Linux</li>
+						<li>Ibm Rational Software</li>
+						<li>Visual Studio</li>
+						<li>DBeaver</li>
+					</ul>
+					<ul>
+						<li>Diseño / Implementación</li>
+						<li>Web Desing</li>
+						<li>Edición de video</li>
+					</ul>
+					<ul>
+						<li>Scrum</li>
+						<li>Desarrollos Ágiles</li>
+						<li>Técnicas de comunicación</li>
+						<li>Técnicas de liderazgo</li>
+					</ul>
+				</article>
+
+				<article id="hobbies">
+					<h2>Hobbies</h2>
+					<div class="hobby">
+						<div></div><p>Leer</p>
+					</div>
+					<div class="hobby">
+						<div></div><p>Montaña</p>
+					</div>
+					<div class="hobby">
+						<div></div><p>Cine</p>
+					</div>
+					<div class="hobby">
+						<div></div><p>Juegos</p>
+					</div>
+					<div class="hobby">
+						<div></div><p>Hip Hop</p>
+					</div>
+					<div class="hobby">
+						<div></div><p>Tecnología</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="slide" id="proyect" style="display:none">
+				<div id="content_portfolio">
+					<div id="categorias">
+						<h2 onclick="SearchJobs('todos')">todos</h2>
+						<h2 onclick="SearchJobs('java')">java</h2>
+						<h2 onclick="SearchJobs('c')">c</h2>
+						<h2 onclick="SearchJobs('html')">html</h2>
+					</div>
+
+					<div id="jobs">
+						<article class="java">
+							<figure>
+							<img src="icons/play.png" alt="">
+							<figcaption>JAVA<span>BRANDING</span></figcaption>
+							</figure>
+						</article>
+							<article class="java">
+							<figure>
+							<img src="icons/play.png" alt="">
+							<figcaption>JAVA<span>BRANDING</span></figcaption>
+							</figure>
+						</article>
+							<article class="c">
+							<figure>
+							<img src="icons/play.png" alt="">
+							<figcaption>JAVA<span>BRANDING</span></figcaption>
+							</figure>
+						</article>
+							<article class="html">
+							<figure>
+							<img src="icons/play.png" alt="">
+							<figcaption>JAVA<span>BRANDING</span></figcaption>
+							</figure>
+						</article>
+							<article class="c">
+							<figure>
+							<img src="icons/play.png" alt="">
+							<figcaption>JAVA<span>BRANDING</span></figcaption>
+							</figure>
+						</article>
+								<article class="html">
+							<figure>
+							<img src="icons/play.png" alt="">
+							<figcaption>JAVA<span>BRANDING</span></figcaption>
+							</figure>
+						</article>
+					</div>
+				</div>
+		</section>
+
+	</div>
+
+	<footer>
+		<div class="rrss">
+			<!--Aqui irian los enlaces a redes sociales-->
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+		<p>© 2020 All rights reserved | Privacity Policy</p>
+
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.10.4/dist/tsparticles.min.js"></script>
+
+	<script src="js/particles.js"></script>
+	<script>
+		alertSize();
+		var sections = new Array(5);
+		sections[0] = "aboutme";
+		sections[1] = "skills";
+		sections[2] = "proyect";
+		
+		//Modifica los colores segun el sections
+		function setColors(i){
+
+			var bkgr_body;
+			var bkgr_menu;
+			var busqueda;
+
+			if (sections[i] == "home") {
+				bkgr_body = "#OAC101C";
+				bkgr_menu = "#OAC101C";
+			}else{
+				bkgr_body = "#f1f1f1";
+				bkgr_menu = "#0A101C";
+			}
+			busqueda = document.getElementById(sections[i]);
+			busqueda.style.background = bkgr_body;
+			var menu = document.getElementsByTagName("header")[0];
+			menu.style.background = bkgr_menu;
+		}
+		//Detecta el tam y muestra u oculta el menu al iniciar
+		function alertSize() {
+		  var myWidth = 0, myHeight = 0;
+		  if( typeof( window.innerWidth ) == 'number' ) {
+		    //No-IE
+		    myWidth = window.innerWidth;
+		    myHeight = window.innerHeight;
+		  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+		    //IE 6+
+		    myWidth = document.documentElement.clientWidth;
+		    myHeight = document.documentElement.clientHeight;
+		  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+		    //IE 4 compatible
+		    myWidth = document.body.clientWidth;
+		    myHeight = document.body.clientHeight;
+		  }
+		  var display;
+		  var menu = document.getElementById("card_menu");
+		  display = card_menu.style.display;
+		  if (myWidth < 767) {
+		  	card_menu.style.display = "none";
+		  }else{
+		  	card_menu.style.display = "block";
+		  }
+		}
+		//Mostrar u ocultar el menu
+		function displayMenu(){
+			var display;
+			var menu = document.getElementById("card_menu");
+			display = card_menu.style.display;
+
+			if (display == "none") {
+				card_menu.style.display = "block"
+			}else{
+				card_menu.style.display = "none"
+			}
+		}
+		//Botones de navegacion del header
+		function navSection(nav){
+			var busqueda;
+			for (var i = 0; i<5; i++) {
+				busqueda = document.getElementById(sections[i]);
+				busqueda.style.display = "none";
+
+				if(sections[i] == nav){
+					busqueda.style.display = "block";
+					setColors(i);
+				}
+			}
+		}
+		//Boton formulario
+		function displayFormuContact(estado){
+			var form = document.getElementById("contact_form");
+			form.style.display = estado;
+		}
+
+		function SearchJobs(tipo){
+			var allJobs;
+			var categorias;
+			var options = new Array(4);
+	
+			options[0] = "todos";
+			options[1] = "java";
+			options[2] = "c";
+			options[3] = "html";
+
+			allJobs = document.getElementById("jobs");
+			allJobs = allJobs.getElementsByTagName('article');
+
+			for ( i = 0; i < allJobs.length; i++) {
+				if(tipo == allJobs[i].className.substring(0, tipo.length))
+					allJobs[i].style.display = "inline-block";
+				else
+					allJobs[i].style.display = "none";
+
+				if(tipo == "todos")
+					allJobs[i].style.display = "inline-block";
+
+			}
+
+			categorias = document.getElementById("categorias");
+			categorias = categorias.getElementsByTagName('h2');
+
+			for (var i = 0; i < categorias.length; i++) {
+				categorias[i].style.color = "black";
+				categorias[i].style.background = "white";
+
+				if(tipo.toUpperCase() == categorias[i].innerText){
+					categorias[i].style.color = "white";
+					categorias[i].style.background = "#0A101C";
+				}			
+			}
+
+
+		}
+	</script>
+	
+</body>
+</html>
